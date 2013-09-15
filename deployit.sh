@@ -6,7 +6,7 @@ file_or_directory="" ;
 # example: marcker@ftp.marcker.org
 ssh_data="";
 
-# ~/public_html/tests
+# example: ~/public_html/tests
 destination="";
 
 deployit () {
