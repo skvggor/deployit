@@ -7,11 +7,11 @@ file_or_directory="" ;
 ssh_data="";
 
 # ~/public_html/tests
-to="";
+destination="";
 
 deployit () {
-  if [[ $file_or_directory && $ssh_data && $to ]]; then
-    rsync -avz -e ssh $file_or_directory $ssh_data:$to
+  if [[ $file_or_directory && $ssh_data && $destination ]]; then
+    rsync -avz -e ssh $file_or_directory $ssh_data:$destination
   else
     echo -e "Missing parameter (s).";
   fi
