@@ -13,10 +13,9 @@ Basic usage
 ===========
 
 * Configuration:
-`config` => file_or_directory, ssh_data, destination
+`config`: file_or_directory, ssh_data, destination
 
-* Run
-`./deployit.sh`
+* Run: `./deployit.sh`
 
 License
 =======
