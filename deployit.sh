@@ -1,13 +1,8 @@
 #!/bin/bash
 
-# examples: mỵ_projects/website/*, index.html, website/css
-file_or_directory="" ;
-
-# example: marcker@ftp.marcker.org
-ssh_data="";
-
-# example: ~/public_html/tests
-destination="";
+file_or_directory=`awk -F", " '{print $1}' config`;
+ssh_data=`awk -F", " '{print $2}' config`;
+destination=`awk -F", " '{print $3}' config`;
 
 deployit () {
   if [[ $file_or_directory && $ssh_data && $destination ]]; then
